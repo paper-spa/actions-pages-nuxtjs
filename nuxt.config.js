@@ -47,6 +47,6 @@ export default {
   build: {
   },
   router: {
-    base: '/actions-pages-nuxtjs'
+    base: '/actions-pages-nuxtjs/'
   }
 }
