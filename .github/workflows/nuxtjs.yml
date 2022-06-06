@@ -32,8 +32,8 @@ jobs:
       with:
         node-version: '16'
         cache: 'npm'
+    - run: npm run ci
     - run: npm run generate
-    - run: npm run deploy
 
     - name: Upload Pages artifact
       uses: paper-spa/upload-pages-artifact@main
