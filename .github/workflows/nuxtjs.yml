@@ -33,7 +33,7 @@ jobs:
         node-version: '16'
         cache: 'npm'
     - run: npm ci
-    - run: npm run generate
+    - run: npm run generate:gh-pages
 
     - name: Upload Pages artifact
       uses: paper-spa/upload-pages-artifact@main
