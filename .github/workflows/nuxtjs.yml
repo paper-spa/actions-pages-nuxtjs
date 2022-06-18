@@ -32,14 +32,13 @@ jobs:
       with:
         node-version: '16'
         cache: 'npm'
-    - run: npm ci
-    - run: npm run generate
     - name: Setup Pages
       id: pages
       uses: paper-spa/configure-pages@path-injection
       with: 
         static_site_generator: nuxt
-
+    - run: npm ci
+    - run: npm run generate
     - name: Upload Pages artifact
       uses: paper-spa/upload-pages-artifact@main
       with:
